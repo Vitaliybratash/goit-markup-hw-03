@@ -25,7 +25,7 @@ body {
 }
 .header {
     padding: 24px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .logo {
     color: var(--title-text-color);
@@ -55,11 +55,11 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
 .site-nav .link {
     display: block;
     padding-top: 8px;
     padding-bottom: 8px;
-
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.1;
@@ -233,8 +233,11 @@ body {
     font-weight: 400;
     line-height:1.4;
 }
-.footer address,li {
+.footer address{
     margin-top: 20px;
+}
+.ftr-item:not(:first-child) {
+    margin-top: 9px;
 }
 .footer-info .address {
     color: var(--secondary-color);
@@ -252,8 +255,8 @@ body {
 .footer-info .link:focus {
     color: var(--accent-color);
 }
-.footer-info .adress:hover ,
-.footer-info .adress:focus {
+.footer-info .address:hover ,
+.footer-info .address:focus {
     color: var(--accent-color);
 }
 .button-nav button:hover,
@@ -262,7 +265,7 @@ body {
     color:var(--secondary-color);
 }
 .section-project {
-    padding: 200px 0;
+    padding: 100px 0;
 }
 .section-project .accent-btn{
     background-color:var(--secondary-color);
@@ -291,7 +294,7 @@ body {
     padding: 20px 24px 4px 24px;
     margin-top: 0;
     margin-bottom: 0;
-    
+
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
@@ -312,7 +315,7 @@ body {
     border: 1px solid #EEEEEE;
 }
 .project-list {
-    margin-top: 50px;
+    margin-top: 56px;
     display: flex;
     flex-wrap: wrap;
 }
